@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A beautiful extension for TailwindCSS. It features multiple HTML elements and it comes with dynamic components for ReactJS, Vue, and Angular.">
+    <meta name="description" content="The MONAI Tutorial is happening at MICCAI 2022 on Septemer 22nd, from 8am to 3pm SGT. Learn more about Developing for the Medical AI Project Lifecycle with MONAI">
     <title>Project MONAI - MICCAI 2022 - Tutorial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -75,25 +75,31 @@
             <div class="flex flex-wrap justify-center text-center mb-12 ">
               <div class="w-full">
                 <h2 class="text-4xl font-semibold ">Learning Goals</h2>
+                <p>After participating in this session, attendees should be able to:</p>
               </div>
             </div>
             <p>
               <p class="text-lg font-light leading-relaxed mt-4 mb-2 text-gray-700">MONAI Core:</p>
               <ul class="list-disc list-inside">
-                <li>Learn about MONAI Core and how it fits into the overall Medical Imaging workflow</li>
-                <li>Understanding DiNTS, Self-Supervised Learning, and Transformer Networks</li>
-              </ul>
-              <p class="text-lg font-light leading-relaxed mt-4 mb-2 text-gray-700">MONAI Deploy:</p>
-              <ul class="list-disc list-inside">
-                <li>Learning how MONAI Deploy is bridging the gap from research innovation to clinical production</li>
-                <li>Understand how to use the MONAI Deploy App SDK for building, verifying, and packaging a deploy-ready AI Application (MAP)</li>
+                <li>Integrate the main components from MONAI Core in your own workflow, including Transforms, Metrics, Losses, Network Architectures, and our new MetaTensor data structure</li>
+                <li>Use MONAI Bundles to help simplify your model development lifecycle throughout MONAI</li>
+                <li>Utilize the MONAI Model Zoo and understand how to contribute a model</li>
+                <li>Understand the new MONAI Federated Learning API</li>
+                <li>Find the latest state-of-the-art techniques, networks, and frameworks for MONAI Core</li>
               </ul>
               <p class="text-lg font-light leading-relaxed mt-4 mb-2 text-gray-700">MONAI Label:</p>
               <ul class="list-disc list-inside">
-                <li>Learn why you should use MONAI Label</li>
-                <li>Walk through creating a MONAI Label App</li>
-                <li>Understand the continous training loop and active learning options</li>
+                <li>Explain the benefits and setup MONAI Label</li>
+                <li>Extend MONAI Label to their own custom application</li>
+                <li>Explain the MONAI Continous Training Loop and Active Learning options</li>
               </ul>
+              <p class="text-lg font-light leading-relaxed mt-4 mb-2 text-gray-700">MONAI Deploy:</p>
+              <ul class="list-disc list-inside">
+                <li>Discuss how MONAI Deploy is bridging the gap from research innovation to clinical production</li>
+                <li>Implement building, verifying, and packaging a deploy-ready AI Application (MAP) using MONAI Deploy App SDK</li>
+                <li>Summarize how MONAI Deploy and the AIDE Platform are being used today</li>
+              </ul>
+
             </p>
           </div>
         </div>
@@ -111,16 +117,15 @@
         <div class="flex flex-wrap ">
           <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
             <div>
-              <img alt="Michael Zephyr Photo" src="./images/MZ.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
+              <img alt="Wenqi Li Photo" src="./images/WL.png" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
               <div class="pt-6 text-center ">
-                <a href="https://www.linkedin.com/in/michaeljzephyr/" target="_blank">
-                  <h5 class="text-xl font-bold mb-2 external-link ">Michael Zephyr</h5>
+                <a href="https://research.nvidia.com/person/wenqi-li" target="_blank">
+                  <h5 class="text-xl font-bold mb-2 external-link ">Wenqi Li</h5>
                 </a>
-                <p class="mt-2 text-sm uppercase font-semibold">Developer Evangelist, NVIDIA</p>
-                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Outreach and Adoption Lead</p>
+                <p class="mt-2 text-sm uppercase font-semibold">Senior Applied Research Scientist, NVIDIA</p>
+                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">Lead Architect for MONAI Core</p>
                 <p class="mt-4 text-sm">
-                  Michael Zephyr is a developer evangelist on the NVIDIA Clara team and is responsible for helping design the developer experience for all NVIDIA Clara products. He develops and presents content through blog posts, webinars, and conferences that help developers
-                  quickly get started. Michael received his master's in computer science specializing in machine learning and interactive intelligence from Georgia Tech University.
+                  Wenqi Li is a senior applied research scientist at NVIDIA, focusing on computer vision and machine learning techniques for medical image analysis. Wenqi received his Ph.D. in applied computing from The University of Dundee (Scotland, UK) in 2015.
                 </p>
               </div>
             </div>
@@ -130,7 +135,7 @@
               <img alt="Eric Kerfoot Photo" src="./images/EK.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
               <div class="pt-6 text-center ">
                 <a href="https://www.kcl.ac.uk/people/eric-kerfoot" target="_blank">
-                  <h5 class="text-xl font-bold mb-2 external-link ">Dr. Eric Kerfoot</h5>
+                  <h5 class="text-xl font-bold mb-2 external-link ">Eric Kerfoot</h5>
                 </a>
                 <h5 class="text-xl font-bold mb-2 "></h5>
                 <p class="mt-2 text-sm uppercase font-semibold">Software Architect in Medical Engineering, King's College London</p>
@@ -144,33 +149,96 @@
           </div>
           <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
             <div>
-              <img alt="Stephen Aylward Photo" src="./images/SA.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
+              <img alt="Nic Ma Photo" src="./images/NM.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
               <div class="pt-6 text-center ">
-                <a href="https://www.kitware.com/stephen-aylward/" target="_blank">
-                  <h5 class="text-xl font-bold mb-2 external-link ">Dr. Stephen Aylward</h5>
+                <a href="https://github.com/Nic-Ma" target="_blank">
+                  <h5 class="text-xl font-bold mb-2 external-link ">Nic Ma</h5>
                 </a>
-                <p class="mt-2 text-sm uppercase font-semibold">Senior Director of Strategic Initiatives, Kitware</p>
-                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">Chair of the MONAI Advisory Board</p>
+                <p class="mt-2 text-sm uppercase font-semibold">Engineering Manager, NVIDIA</p>
+                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Core Lead Developer</p>
                 <p class="mt-4 text-sm">
-                  Stephen R. Aylward, Ph.D. is Senior Director of Strategic Initiatives at Kitware, Fellow of the MICCAI Society, and adjunct associate professor of computer science at The University of North Carolina at Chapel Hill. He volunteers as treasurer of the MICCAI
-                  Special Interest Group on Medical Ultrasound, chair of the MONAI deep learning system advisory board, and associate editor for IEEE Transactions on Medical Imaging.
+                  Nic ma leads the development of medical deep learning solutions and AI SDK development and optimization, Computer vision, Natural language processing, OCR, etc. Skilled at PyTorch, TensorFlow, Caffe and NVIDIA TensorRT.
                 </p>
               </div>
             </div>
           </div>
           <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
             <div>
-              <img alt="Jorge Cardoso Photo" src="./images/JC.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
+              <img alt="Holger Roth Photo" src="./images/HR.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
               <div class="pt-6 text-center ">
-                <a href="https://www.kcl.ac.uk/people/jorge-cardoso" target="_blank">
-                  <h5 class="text-xl font-bold mb-2 external-link ">Dr. Jorge Cardoso</h5>
+                <a href="https://research.nvidia.com/person/holger-roth" target="_blank">
+                  <h5 class="text-xl font-bold mb-2 external-link ">Holger Roth</h5>
                 </a>
-                <p class="mt-2 text-sm uppercase font-semibold">Reader in Artificial Medical Intelligence, King’s College London</p>
-                <p class="mt-1 text-sm uppercase font-semibold">CTO, London Medical Imaging and AI Centre for Value-based Healthcare</p>
-                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Advisory Board Member</p>
+                <p class="mt-2 text-sm uppercase font-semibold">Senior Applied Research Scientist, NVIDIA</p>
+                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Federated Learning Group Lead</p>
                 <p class="mt-4 text-sm">
-                  M Jorge Cardoso is a Reader in Artificial Medical Intelligence at King’s College London, where he leads a research portfolio on big data analytics, quantitative radiology and value based healthcare. Jorge is also the CTO of the new London Medical Imaging
-                  and AI Centre for Value-based Healthcare.
+                  Holger Roth is a Sr. Applied Research Scientist at NVIDIA focusing on deep learning for medical imaging. He has been working closely with clinicians and academics over the past several years to develop deep learning based medical image computing and computer-aided
+                  detection models for radiological applications. He is an Associate Editor for IEEE Transactions of Medical Imaging and holds a Ph.D. from University College London, UK. In 2018, he was awarded the MICCAI Young Scientist Publication Impact
+                  Award.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
+            <div>
+              <img alt="Seyed-Ahmad Ahmadi Zephyr Photo" src="./images/SAA.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
+              <div class="pt-6 text-center ">
+                <a href="https://www.linkedin.com/in/seyed-ahmad-ahmadi-2509279" target="_blank">
+                  <h5 class="text-xl font-bold mb-2 external-link ">Seyed-Ahmad Ahmadi</h5>
+                </a>
+                <p class="mt-2 text-sm uppercase font-semibold">Senior Solutions Architect - Deep Learning in Healthcare, NVIDIA</p>
+                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Developer</p>
+                <p class="mt-4 text-sm">
+                  Seyed-Ahmad Ahmadi is a Senior Solution Architect for Deep Learning in Healthcare at Nvidia. 15+ years of experience of working at the cross-section between computer science, clinical research and neuroscience. Skilled in computer science, medical image
+                  analysis, clinical data science and applied artificial intelligence (machine and deep learning). Consultation on image processing workflows with state-of-the-art medical imaging toolkits (e.g. MONAI and Nvidia Clara Imaging).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
+            <div>
+              <img alt="Selnur Erdal Photo" src="./images/SE.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
+              <div class="pt-6 text-center ">
+                <a href="https://www.mayoclinic.org/biographies/erdal-barbaros-selnur-s-ph-d/bio-20490603" target="_blank">
+                  <h5 class="text-xl font-bold mb-2 external-link ">Selnur Erdal</h5>
+                </a>
+                <p class="mt-2 text-sm uppercase font-semibold">Technical Director, Center for Augmented Intelligence in Imaging Department of Radiology, Mayo Clinic</p>
+                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Deploy Group Lead</p>
+                <p class="mt-4 text-sm">
+                  Dr. Erdal received his Ph.D. in Electrical and Computer Engineering from The Ohio State University and currently serves as Technical Director for the Center for Augmented Intelligence in Imaging, Department of Radiology at Mayo Clinic.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
+            <div>
+              <img alt="Vikash Gupta Photo" src="./images/VK.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
+              <div class="pt-6 text-center ">
+                <a href="https://sites.google.com/site/guptavikash8972/" target="_blank">
+                  <h5 class="text-xl font-bold mb-2 external-link ">Vikash Gupta</h5>
+                </a>
+                <p class="mt-2 text-sm uppercase font-semibold">Assistant Professor of Radiology, Mayo Clinic</p>
+                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Deploy Lead Developer</p>
+                <p class="mt-4 text-sm">
+                  Vikash Gupta is a data science analyst at the Department of Radiology, Mayo Clinic Florida. He works on building tools for deep learning and radiology. Prior to Mayo Clinic, he worked as a research scientist at The Ohio State University. His research
+                  interests and publications include data augmentation techniques for medical imaging, democratizing AI for healthcare, cardiac computed tomography, X-rays, mammography, fracture detection and super resolution for diffusion weighted images.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
+            <div>
+              <img alt="Michael Zephyr Photo" src="./images/MZ.jpg" class="shadow-lg rounded-full max-w-full mx-auto " style="max-width: 120px; ">
+              <div class="pt-6 text-center ">
+                <a href="https://www.linkedin.com/in/michaeljzephyr/" target="_blank">
+                  <h5 class="text-xl font-bold mb-2 external-link ">Michael Zephyr</h5>
+                </a>
+                <p class="mt-2 text-sm uppercase font-semibold">Developer Evangelist, NVIDIA</p>
+                <p class="mt-1 px-2 text-sm uppercase font-semibold monai-medium">MONAI Adoption and Outreach Lead</p>
+                <p class="mt-4 text-sm">
+                  Michael Zephyr is a developer evangelist on the NVIDIA Clara team and is responsible for helping design the developer experience for all NVIDIA Clara products. He develops and presents content through blog posts, webinars, and conferences that help developers
+                  quickly get started. Michael received his master's in computer science specializing in machine learning and interactive intelligence from Georgia Tech University.
                 </p>
               </div>
             </div>
@@ -188,31 +256,30 @@
                 <h2 class="text-4xl font-semibold ">Agenda</h2>
               </div>
             </div>
-            <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">Introduction and Overview - 30 minutes</p>
+            <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">Introduction</p>
             <ul class="mb-4 ml-4">
               <li class="list-disc list-inside">Open Science</li>
-              <li class="list-disc list-inside">What is MONAI</li>
-              <li class="list-disc list-inside">Future of MONAI</li>
+              <li class="list-disc list-inside">MONAI Overview</li>
             </ul>
-            <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">MONAI Label - 2 hours</p>
-            <ul class="mb-4 ml-4">
-              <li class="list-disc list-inside">MONAI Label Architecture and Components</li>
-              <li class="list-disc list-inside">Contiuous and Active Learning</li>
-              <li class="list-disc list-inside">3D Slicer + MONAI Label Walkthrough</li>
-              <li class="list-disc list-inside">Create your own MONAI Label App</li>
-            </ul>
-            <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">Lunch Break - 30 minutes</p>
-            <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">MONAI Core - 2 hours</p>
+            <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">MONAI Core</p>
             <ul class="mb-4 ml-4">
               <li class="list-disc list-inside">MONAI Core Architecture and Components</li>
-              <li class="list-disc list-inside">MedNIST Walkthrough</li>
-              <li class="list-disc list-inside">SWIN UNETR, AutoML, and More</li>
+              <li class="list-disc list-inside">MONAI Bundle and Model Zoo</li>
+              <li class="list-disc list-inside">MONAI Datasets</li>
+              <li class="list-disc list-inside">MONAI Federated Learning API</li>
+              <li class="list-disc list-inside">Swin UNETR, AutoML, and other MONAI research</li>
+            </ul>
+            <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">MONAI Label</p>
+            <ul class="mb-4 ml-4">
+              <li class="list-disc list-inside">MONAI Label Overview</li>
+              <li class="list-disc list-inside">MONAI Label App Overview and MONAI Bundle</li>
+              <li class="list-disc list-inside">Demo: 3D Slicer + MONAI Label</li>
             </ul>
             <p class="text-lg font-semibold leading-relaxed mt-2 text-gray-700">MONAI Deploy - 2 hours</p>
             <ul class="mb-4 ml-4">
-              <li class="list-disc list-inside">MONAI Deploy Architecture and Components</li>
-              <li class="list-disc list-inside">MONAI Application Package Walkthrough</li>
-              <li class="list-disc list-inside">AI Inference in the Clinic</li>
+              <li class="list-disc list-inside">MONAI Deploy Overview</li>
+              <li class="list-disc list-inside">MONAI Deploy App SDK - Operators, Bundles, and MAPs</li>
+              <li class="list-disc list-inside">MONAI Deploy in the Clinic: An NHS exemplar with AIDE</li>
             </ul>
           </div>
         </div>
